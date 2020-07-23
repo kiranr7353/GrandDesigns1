@@ -1687,7 +1687,7 @@ transition: 0.5s;
          display: block;
          position: relative;
          top: 30px;
-         left:  200px;
+         left:  80%;
          width: 30px;
          height: 30px;
          cursor: pointer;
@@ -1759,14 +1759,17 @@ transition: 0.5s;
         position: relative;
         width: 330%;
     }
-    .banner .content h1{
+    /* .banner .content h1{
         font-size: 
         20px;
-    }
+    } */
     .about{
         position: relative;
-        flex-direction: column;
-        width: 300%;
+        /* flex-direction: column; */
+        width: 330%;
+    }
+    .about .contentBx p{
+        font-size: 25px;
     }
     .about .contentBx,
     .about .imgBx{
@@ -1774,6 +1777,9 @@ transition: 0.5s;
         padding: 50px;
         min-height: 400px;
         text-align: center;
+    }
+    .sec1{
+        width: 330%;
     }
     
 }
