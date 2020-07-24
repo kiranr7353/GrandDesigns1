@@ -1771,6 +1771,40 @@ transition: 0.5s;
     .about .contentBx p{
         font-size: 25px;
     }
+    .about .contentBx h2[data-scroll="out"]{
+        transform: scaleX(1);
+      }
+    .about .contentBx h2::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background: goldenrod; */
+        background: none;
+        transform-origin: right;
+        transition: 0.5s;
+    }
+    .about .contentBx h2[data-scroll="in"]::before{
+        transform: scaleX(0);
+        transition-delay: 0.5s;
+    }
+    .about .contentBx h2[data-scroll="out"]{
+        transform: scale(1);
+    }
+      .about .contentBx a[data-scroll="in"]{
+        transform: translatex(1);
+        transition-delay: 1s;
+        opacity: 0;
+    }
+    .about .contentBx a[data-scroll="out"]{
+        transform: translateX(10px);
+        transition-delay: 1s;
+        opacity: 1;
+    }
+   
+   
     .about .contentBx,
     .about .imgBx{
         width: 100%;
@@ -1780,6 +1814,64 @@ transition: 0.5s;
     }
     .sec1{
         width: 330%;
+    }
+    .sec1 .content .cho h1{
+        position: relative;
+        text-align: center;
+        left: 500px;
+        letter-spacing: 2px;
+        font-size: 2.5em;
+        font-weight: 100;
+        color: goldenrod;
+        display: inline-block;
+        transition: 0.5s;
+        transform-origin: left;
+        transform: scaleX(0);
+    }
+    .sec1 .content .cho h1[data-scroll="out"]{
+        transform: scaleX(1);
+      }
+    .sec1 .content .cho h1::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: none;
+        transform-origin: right;
+        transition: 0.5s;
+    }
+    .sec1 .content .cho h1[data-scroll="in"]::before{
+        transform: scaleX(0);
+        transition-delay: 0.5s;
+    }
+    .sec1 .content .cho h3{
+        position: relative;
+        
+        color: goldenrod;
+        display: inline-block;
+        transition: 0.5s;
+        transform-origin: left;
+        transform: scaleX(0);
+    }
+    .sec1 .content .cho h3[data-scroll="out"]{
+        transform: scaleX(1);
+      }
+    .sec1 .content .cho h3::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: none;
+        transform-origin: right;
+        transition: 0.5s;
+    }
+    .sec1 .content .cho h3[data-scroll="in"]::before{
+        transform: scaleX(0);
+        transition-delay: 0.5s;
     }
     .sec2{
         width: 330%;
@@ -1800,11 +1892,130 @@ transition: 0.5s;
         width: 100%;
         height: 100%;
       }
+      .sec2 .content .mxw800p h1{
+        position: relative;
+        color: black;
+        font-weight: 500;
+        display: inline-block;
+        transition: 0.5s;
+        transform-origin: left;
+        transform: scaleX(0);
+        left: 500px;
+    }
+    .sec2 .content .mxw800p h1[data-scroll="out"]{
+        transform: scaleX(1);
+      }
+    .sec2 .content .mxw800p h1::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: none;
+        transform-origin: right;
+        transition: 0.5s;
+    }
+    .sec2 .content .mxw800p h1[data-scroll="in"]::before{
+        transform: scaleX(0);
+        transition-delay: 0.5s;
+    }
       .sec3{
           width: 280%;
           background:white;
           
       }
+      .sec3 .content  h2{
+        position: relative;
+        color: black;
+        /* font-weight: 500; */
+        display: inline-block;
+        transition: 0.5s;
+        transform-origin: left;
+        transform: scaleX(0);
+        /* top: 10px; */
+        /* left: 500px; */
+    }
+    .sec3 .content  h2[data-scroll="in"]{
+        transform: scaleX(1);
+      }
+    .sec3 .content  h2::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: black;
+        transform-origin: right;
+        transition: 0.5s;
+    }
+    .sec3 .content  h2[data-scroll="in"]::before{
+        transform: scaleX(0);
+        transition-delay: 0.5s;
+    }
+    
+    
+    .sec3 .content  h2{
+        position: relative;
+        color: black;
+        /* font-weight: 500; */
+        display: inline-block;
+        transition: 0.5s;
+        transform-origin: left;
+        transform: scaleX(0);
+        /* top: 10px; */
+        /* left: 500px; */
+    }
+    .sec3 .content  h2[data-scroll="in"]{
+        transform: scaleX(1);
+      }
+    .sec3 .content  h2::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: none;
+        transform-origin: right;
+        transition: 0.5s;
+    }
+    .sec3 .content  h2[data-scroll="in"]::before{
+        transform: scaleX(0);
+        transition-delay: 0.5s;
+    }
+    
+    
+    .sec3 .content  p{
+        position: relative;
+        color: black;
+        /* font-weight: 500; */
+        display: inline-block;
+        transition: 0.5s;
+        transform-origin: right;
+        transform: scaleX(0);
+        top: 60px;
+        right: 50px;
+    }
+    .sec3 .content  p[data-scroll="out"]{
+        transform: scaleX(1);
+      }
+    .sec3 .content  p::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: none;
+        transform-origin: left;
+        transition: 0.5s;
+    }
+    .sec3 .content  p[data-scroll="out"]::before{
+        transform: scaleX(0);
+        transition-delay: 0.5s;
+    }
       .sec4{
           position: relative;
           width: 330%;
@@ -1817,6 +2028,68 @@ transition: 0.5s;
         position: relative;
         width: 330%;
     }
+    .sec6 .content6 h1{
+        position: relative;
+        color:black;
+        /* font-weight: 500; */
+        display: inline-block;
+        transition: 0.5s;
+        transform-origin: left;
+        transform: scaleX(0);
+        /* top: 10px; */
+        left:550px;
+    }
+    .sec6 .content6 h1[data-scroll="in"]{
+        transform: scaleX(1);
+      }
+    .sec6 .content6 h1::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: none;
+        transform-origin: right;
+        transition: 0.5s;
+    }
+    .sec6 .content6 h1[data-scroll="in"]::before{
+        transform: scaleX(0);
+        transition-delay: 0.5s;
+    }
+      
+
+    .h1 h1{
+        position: relative;
+        color:goldenrod;
+        /* font-weight: 500; */
+        display: inline-block;
+        transition: 0.5s;
+        transform-origin: left;
+        transform: scaleX(0);
+        /* top: 10px; */
+        left:550px;
+    }
+    .h1 h1[data-scroll="out"]{
+        transform: scaleX(1);
+      }
+    .h1 h1::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: none;
+        transform-origin: right;
+        transition: 0.5s;
+    }
+    .h1 h1[data-scroll="out"]::before{
+        transform: scaleX(0);
+        transition-delay: 0.5s;
+    } 
+
+
     .sec8 .clients1{
         position: relative;
         width: 300%;
@@ -1826,7 +2099,10 @@ transition: 0.5s;
         /* margin: 50px; */
         
     }
-  
+     
+    
+
+
     .sec9{
         position: relative;
         width: 330%;
@@ -1835,6 +2111,40 @@ transition: 0.5s;
         position: relative;
         width: 330%;
     }
+
+    .sec10  h1{
+        position: relative;
+        color:black;
+        /* font-weight: 500; */
+        display: inline-block;
+        transition: 0.5s;
+        transform-origin: left;
+        transform: scaleX(0);
+        /* top: 10px; */
+        /* left:600px; */
+    }
+    .sec10  h1[data-scroll="out"]{
+        transform: scaleX(1);
+      }
+    .sec10  h1::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background:none;
+        transform-origin: right;
+        transition: 0.5s;
+    }
+    .sec10  h1[data-scroll="in"]::before{
+        transform: scaleX(0);
+        transition-delay: 0.5s;
+    }
+
+
+
+
     .sec11{
         position: relative;
         width: 330%;
