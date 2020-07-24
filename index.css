@@ -1959,11 +1959,11 @@ transition: 0.5s;
         transform: scaleX(0);
         transition-delay: 0.5s;
     }
-      .sec3{
+    .sec3{
           width: 280%;
           background:white;
           
-      }
+    }
       .sec3 .content  h2{
         position: relative;
         color: black;
@@ -2245,4 +2245,60 @@ transition: 0.5s;
     .sidebar-contact.active5{
         left: 900px;
     }
+}
+@media (min-width:1000px){
+   .banner{
+       width: 150%;
+   }
+   .about{
+       width: 150%;
+   }
+   .sec1{
+       width: 150%;
+   }
+   .sec2{
+       width: 150%;
+   }
+   .sec3{
+       width: 150%;
+       background: white;
+   }
+   .sec4{
+       width: 150%;
+   }
+   .sec5{
+       width: 150%;
+   }
+   .sec6{
+       width: 150%;
+   }
+   .sec8{
+       width: 150%;
+   }
+   .sec9{
+       width: 150%;
+   }
+   .sec10{
+       width: 150%;
+   }
+   .sec11{
+       width: 150%;
+   }
+   .sec2 .container .box{
+    position: relative;
+    width: 1250px;
+    height: 550px;
+    bottom: 170px;
+    background: #000;
+    left: 250px;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0,0,0.8);
+}
+.sec2 .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
 }
