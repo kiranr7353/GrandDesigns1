@@ -1763,6 +1763,32 @@ transition: 0.5s;
         font-size: 
         20px;
     } */
+    .banner a{
+        margin: 10px;
+        padding: 10px;
+        border: 3px solid goldenrod;
+        text-decoration: none;
+        color: goldenrod;
+        background: white;
+        font-weight: 800;
+        border-radius: 5px;
+        display: inline-block;
+        transition: 1s;
+        transform: translateX(-300px);
+        opacity: 0;
+    
+    }
+    .banner a[data-scroll="out"]{
+        transform: translateX(0);
+        transition-delay: 1s;
+        opacity: 1;
+    }
+
+    
+
+
+
+
     .about{
         position: relative;
         /* flex-direction: column; */
@@ -1873,8 +1899,21 @@ transition: 0.5s;
         transform: scaleX(0);
         transition-delay: 0.5s;
     }
+    .sec1 .content .cho p{
+        font-size: 25px;
+    }
+    .sec1 .content .cho h1{
+        font-weight: 600;
+    }
+    .sec1 .content .cho h3{
+        font-size: 25px;
+        font-size: 500;
+    }
     .sec2{
         width: 330%;
+    }
+    .sec2 .content .mxw800p p{
+        font-size:30px ;
     }
     .sec2 .container .box{
         position: relative;
@@ -1935,6 +1974,17 @@ transition: 0.5s;
         transform: scaleX(0);
         /* top: 10px; */
         /* left: 500px; */
+    }
+    .sec3 .content  h2{
+        position: relative;
+        text-align: center;
+        left: 500px;
+    }
+    .sec3 .content  p{
+        position: relative;
+        /* text-align: center; */
+        left: 500px;
+        font-size: 30px;
     }
     .sec3 .content  h2[data-scroll="in"]{
         transform: scaleX(1);
@@ -2016,6 +2066,26 @@ transition: 0.5s;
         transform: scaleX(0);
         transition-delay: 0.5s;
     }
+    .sec3 a{
+        position: relative;
+        left: 50%;
+        bottom: 10px;
+        margin: 10px;
+        padding: 10px;
+        text-decoration: none;
+        /* border:  solid black; */
+        color: #fff;
+        background: goldenrod;
+        display: inline-block;
+        transition: 1s;
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    .sec3 a[data-scroll="out"]{
+        transform: translateX(0);
+        transition-delay: 1s;
+        opacity: 1;
+    }
       .sec4{
           position: relative;
           width: 330%;
@@ -2023,6 +2093,7 @@ transition: 0.5s;
       .sec5{
           position: relative;
           width: 330%;
+          background: white;
       }
     .sec6{
         position: relative;
@@ -2149,5 +2220,29 @@ transition: 0.5s;
         position: relative;
         width: 330%;
     }
-    
+    .scrollTop{
+        position: fixed;
+        bottom: 800px;
+        right: 40px;
+        width: 150px;
+        height: 150px;
+        background: goldenrod url(up.png);
+        border-radius: 50%;
+        background-size: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 100000;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .scrollTop.active{
+        bottom: 40px;
+        visibility: visible;
+        opacity: 1;
+    }
+    .sidebar-contact.active5{
+        left: 900px;
+    }
 }
