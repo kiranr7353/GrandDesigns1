@@ -67,13 +67,13 @@
   </div>
   <ul>
      <div id="marker"></div> 
-    <li><a href="" >Home</a></li>
-    <li><a href="">About</a></li>
-    <li><a href="">Services</a></li>
-    <li><a href="">Gallery</a></li>
-    <li><a href="">Our Work</a></li>
-    <li><a href="">Clients</a></li>
-    <li><a href="">Contact</a></li>
+    <li><a href="#" >Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#our">Our Work</a></li>
+    <li><a href="#clients">Clients</a></li>
+    <li><a href="#contact">Contact</a></li>
 </ul>
 <div class="toggle15" onclick="toggle15()"></div>
 
@@ -106,9 +106,16 @@
 <div class="imgBx"></div>
 <script src="scroll-out.js"></script>
     <script type="text/javascript">
+    if(window.innerWidth>900){
         ScrollOut({
             targets:'a,h2,p'
         })
+    }
+    else{
+        ScrollOut({
+            targets:'none'
+        })
+    }
     </script>
 </section>
 <!-- ------------------------------WHY CHOOSE US?---------------------------------------------- -->
@@ -167,7 +174,7 @@
     </script>
 </section>
 <!-- ------------------------------SERVICES------------------------------------------------------- -->
-<section class="sec2">
+<section class="sec2" id="services">
     <div class="content">
         <div class="mxw800p">
             <h1>What we do?</h1>
@@ -324,7 +331,7 @@
   
   
 <!-- ------------------------------GALLERY------------------------------------------------------- -->
-<section class="sec3">
+<section class="sec3" id="gallery">
     <div class="content">
         <h2 data-aos="fade-right" data-aos-duration="2000">OUR GALLERY</h2>
         <P data-aos="fade-down" data-aos-duration="2000">Check out our latest collections</P>
@@ -553,7 +560,7 @@
 </section>
 
 <!-- ------------------------------------OUR WORK----------------------------------------------------- -->
-<section class="sec6">
+<section class="sec6" id="our">
   <div class="content6">  
       <h1 data-aos="zoom-in-up" data-aos-duration="2000">OUR STYLE OF WORK</h1>
   </div>
@@ -644,7 +651,7 @@
 <br>
 <br>
 <!-- ------------------------------OUR CLIENTS------------------------------------------------------ -->
-<section class="sec8">
+<section class="sec8" id="clients">
   <div class="content">  
   <h2>OUR CLIENTS</h2>
   </div>
@@ -682,7 +689,7 @@
       </script>
 </section>
 <!-- ------------------------------------------------------------------------------------ -->
-<section class="sec9">
+<section class="sec9" id="contact">
     <h1 data-aos="zoom-in-up" data-aos-duration="1000">Your dream home is just a click away</h1> <br>
     <a href="" data-aos="flip-left" data-aos-duration="2000">Get Started</a>
 </section>
@@ -745,7 +752,7 @@ function initMap() {
 </section>
 
 <!-- ---------------------------------FOOTER---------------------------------------------------- -->
-<section class="sec11">
+<section class="sec11" id="">
     <br>
     <br>
     <br>
