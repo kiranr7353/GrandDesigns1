@@ -1781,5 +1781,63 @@ transition: 0.5s;
     .sec1{
         width: 330%;
     }
+    .sec2{
+        width: 330%;
+    }
+    .sec2 .container .box{
+        position: relative;
+        width: 1250px;
+        height: 550px;
+        bottom: 170px;
+        background: #000;
+        left: 250px;
+        margin: 15px;
+        box-sizing: border-box;
+        overflow: hidden;
+        box-shadow: 0 5px 10px rgba(0, 0,0,0.8);
+    }
+    .sec2 .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+      .sec3{
+          width: 280%;
+          background:white;
+          
+      }
+      .sec4{
+          position: relative;
+          width: 330%;
+      }
+      .sec5{
+          position: relative;
+          width: 330%;
+      }
+    .sec6{
+        position: relative;
+        width: 330%;
+    }
+    .sec8 .clients1{
+        position: relative;
+        width: 300%;
+        display: flex;
+        padding: 100px;
+        flex-grow: initial;
+        /* margin: 50px; */
+        
+    }
+  
+    .sec9{
+        position: relative;
+        width: 330%;
+    }
+    .sec10{
+        position: relative;
+        width: 330%;
+    }
+    .sec11{
+        position: relative;
+        width: 330%;
+    }
     
 }
